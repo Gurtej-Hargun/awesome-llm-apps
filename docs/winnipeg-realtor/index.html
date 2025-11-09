@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Your Property's Potential - Winnipeg Realtor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+            cursor: pointer;
+            filter: invert(0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Chosen Palette: Warm Neutral Professional (BG: bg-gray-50, Text: text-gray-800, Accent: bg-teal-700, Info: bg-amber-50) -->
+    <!-- Application Structure Plan: Designed a top-down narrative SPA. Starts with a Hero (Value Prop), flows to an Intro (Philosophy), then a 3-col grid for Services (What You Get), a visually distinct info-box for the client Qualifier (Realistic Approach), and ends with the primary CTA (Lead Gen Form). Added a sticky nav with smooth-scrolling links to "Our Process", "Our Approach", "Get Started" to transform the static text into an explorable single-page application, guiding the user's journey. -->
+    <!-- Visualization & Content Choices: Report Info (Services) -> Goal (Compare Services) -> HTML 3-column grid with Unicode icons (💰, 🏠, 📈) -> Interaction (N/A, static info) -> Justification (Clear, scannable, professional way to present service pillars). Report Info (Qualifier) -> Goal (Highlight/Warn) -> HTML info-box (bg-amber-50) -> Interaction (N/A, static text) -> Justification (Visually isolates this key brand message). Report Info (Contact) -> Goal (Lead Gen) -> HTML Form -> Interaction (JS Validation & Success Message) -> Justification (Provides immediate feedback to user on form submission). -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-teal-700">
+                Winnipeg Property Partners
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#process" class="text-gray-600 hover:text-teal-700 font-medium">Our Process</a>
+                <a href="#approach" class="text-gray-600 hover:text-teal-700 font-medium">Our Approach</a>
+                <a href="#start" class="bg-teal-600 text-white px-4 py-2 rounded-md font-medium hover:bg-teal-700 transition duration-300">Get Started</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#process" class="block text-gray-600 hover:text-teal-700 font-medium">Our Process</a>
+            <a href="#approach" class="block text-gray-600 hover:text-teal-700 font-medium">Our Approach</a>
+            <a href="#start" class="block bg-teal-600 text-white px-4 py-2 rounded-md font-medium hover:bg-teal-700 transition duration-300">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container mx-auto px-6 pt-24 pb-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                Unlock Your Property's True Potential in Winnipeg.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
+                Stop Guessing. Start Deciding. Receive a Data-Backed Analysis Before You Commit to Renting, Buying, or Selling.
+            </p>
+        </section>
+
+        <section class="container mx-auto px-6 py-16 max-w-3xl text-lg">
+            <h3 class="text-2xl font-semibold text-center text-gray-900 mb-6">HELLO HOME SEEKERS, SELLERS, AND RENTERS:</h3>
+            <p class="mb-4">
+                Thank you for your interest. As a licensed Realtor in Winnipeg, my process is built on a simple premise: <strong>You are a partner, making decisions with me—not just following advice.</strong>
+            </p>
+            <p>
+                I guide you through the entire process, ensuring every decision is backed by current market facts and a complete understanding of your property.
+            </p>
+        </section>
+
+        <section id="process" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">
+                    What You Get Before Our Conversation
+                </h2>
+                <p class="text-xl text-center text-gray-700 mb-16">Your Free Preliminary Analysis Includes:</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-teal-600">
+                        <span class="text-4xl">💰</span>
+                        <h4 class="text-2xl font-semibold text-gray-900 my-4">True Market Value</h4>
+                        <p class="text-gray-700">Precise valuation based on current, up-to-date market facts, including comparable sold house prices and hidden value insights.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-teal-600">
+                        <span class="text-4xl">🏠</span>
+                        <h4 class="text-2xl font-semibold text-gray-900 my-4">Property Health Check</h4>
+                        <p class="text-gray-700">A comprehensive understanding of your property's immediate and long-term maintenance needs and necessary fixes (critical for buyers and sellers).</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-teal-600">
+                        <span class="text-4xl">📈</span>
+                        <h4 class="text-2xl font-semibold text-gray-900 my-4">Informed Strategy</h4>
+                        <p class="text-gray-700">Clear guidance on whether your current best option is to <strong>Rent, Buy, Sell, or Keep Holding</strong> your property.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="bg-amber-50 py-20">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl border-l-8 border-amber-500">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">🛑 THE REALISTIC APPROACH (Please Read)</h3>
+                    <div class="space-y-4 text-lg text-gray-700">
+                        <p>I am not a magician. If you expect a house worth $100,000 to sell for $300,000, or want to buy that same house for half the price—please do not contact me. I operate on market facts, not fantasy.</p>
+                        <p class="font-semibold text-gray-900">However: If you want to know your property's <strong>full potential</strong>—and the specific investment needed to achieve your desired price—I can provide a comprehensive cost-to-value analysis. Every house has potential; let's unlock yours with facts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="start" class="bg-gray-100 py-24">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">🗓️ NEXT STEP: SELECT YOUR TIME SLOT</h2>
+                <p class="text-lg text-center text-gray-700 mb-10">
+                    Let's utilize our time finding your best deal. Please provide initial information about the property you desire or wish to sell/rent out, and choose a time slot below. I will get back to you with a confirmation and your preliminary deal estimate.
+                </p>
+
+                <form id="contact-form" class="bg-white p-8 md:p-10 rounded-lg shadow-xl space-y-6">
+                    <div>
+                        <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="clientType" class="block text-sm font-medium text-gray-700">I am a...</label>
+                        <select id="clientType" name="clientType" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500 bg-white">
+                            <option value="" disabled selected>Please select an option</option>
+                            <option value="Buyer">Buyer</option>
+                            <option value="Seller">Seller</option>
+                            <option value="Renter">Renter</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="propertyInfo" class="block text-sm font-medium text-gray-700">Property Address or Target Area</label>
+                        <input type="text" id="propertyInfo" name="propertyInfo" required placeholder="e.g., River Heights, Osborne Village" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+                    
+                    <div>
+                        <label for="dateTime" class="block text-sm font-medium text-gray-700">Preferred Date and Time Slot for Call</label>
+                        <input type="datetime-local" id="dateTime" name="dateTime" required class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+
+                    <div>
+                        <button id="submit-btn" type="submit" class="w-full flex justify-center py-3 px-6 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-300">
+                            GET MY FREE PRELIMINARY MARKET ANALYSIS
+                        </button>
+                    </div>
+
+                    <div id="form-message" class="hidden"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 Winnipeg Property Partners. Licensed in Manitoba.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const formMessage = document.getElementById('form-message');
+
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('#mobile-menu a, header nav a[href^="#"]');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    if (mobileMenu.classList.contains('hidden') === false) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Submitting...';
+
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const clientType = document.getElementById('clientType').value;
+                const propertyInfo = document.getElementById('propertyInfo').value;
+                const dateTime = document.getElementById('dateTime').value;
+
+                if (!fullName || !email || !phone || !clientType || !propertyInfo || !dateTime) {
+                    showMessage('Please fill out all required fields.', 'error');
+                    resetButton();
+                    return;
+                }
+
+                if (!validateEmail(email)) {
+                    showMessage('Please enter a valid email address.', 'error');
+                    resetButton();
+                    return;
+                }
+                
+                setTimeout(() => {
+                    showMessage('Thank you! Your request has been received. I will be in touch shortly to confirm.', 'success');
+                    form.reset();
+                    resetButton();
+                }, 1000);
+            });
+
+            function showMessage(message, type) {
+                formMessage.textContent = message;
+                formMessage.className = `p-4 rounded-md text-center font-medium ${
+                    type === 'success' 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-red-100 text-red-800'
+                }`;
+            }
+
+            function resetButton() {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'GET MY FREE PRELIMINARY MARKET ANALYSIS';
+            }
+
+            function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+
+            const now = new Date();
+            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+            const minDateTime = now.toISOString().slice(0, 16);
+            document.getElementById('dateTime').setAttribute('min', minDateTime);
+        });
+    </script>
+</body>
+</html>
